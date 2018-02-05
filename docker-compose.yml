@@ -1,0 +1,29 @@
+version: '3.1'
+
+networks:
+  mysql:
+
+volumes:
+  mysql-data:
+
+services:
+  mysql:
+    image: mysql:5.7
+    networks:
+      - mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - mysql-data:/var/lib/data
+
+  app:
+    build: .
+    networks:
+      - mysql
+    ports:
+      - 8000:80
+    volumes:
+      - ./drupal:/drupal
+    environment:
+      PHP_MEMORY_LIMIT: 256M
+
