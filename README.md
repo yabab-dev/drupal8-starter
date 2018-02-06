@@ -1,11 +1,5 @@
 # Drupal 8 & Docker starter
 
-## Install drupal on your host
-
-```sh
-composer create-project drupal-composer/drupal-project:8.x-dev app --stability dev --no-interaction
-```
-
 ## Start docker containers
 
 ```sh
@@ -18,10 +12,12 @@ docker-compose up -d
 docker-compose exec -u application app bash
 ```
 
-## Install Drupal database
+## Install Drupal database & modules
 
 ```sh
 # On container
+composer install -o
+
 drupal si standard \
 --langcode="fr"  \
 --db-type="mysql"  \

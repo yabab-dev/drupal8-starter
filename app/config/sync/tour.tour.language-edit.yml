@@ -1,0 +1,51 @@
+uuid: 19554266-1f5d-47a9-a14e-a9ed97c7966c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - language
+_core:
+  default_config_hash: uwUxQwqEzjNphw2r1_eXr3GJkw1uI0gWkmWQ6J5OvPI
+id: language-edit
+label: 'Modification des langues'
+module: language
+routes:
+  -
+    route_name: entity.configurable_language.edit_form
+tips:
+  language-edit-overview:
+    id: language-edit-overview
+    plugin: text
+    label: 'Modification des langues'
+    body: '<p> Cette page donne la possibilité de modifier une langue sur votre site, y compris les langues personnalisées</p>'
+    weight: 1
+  language-edit-langcode:
+    id: language-edit-langcode
+    plugin: text
+    label: 'Code de la langue'
+    body: '<p>Vous ne pouvez pas changer le code d''une langue du site, dès lors qu''elle est utilisée par le système pour garder trace de cette langue</p>'
+    weight: 2
+    attributes:
+      data-id: edit-langcode-view
+  language-edit-label:
+    id: language-edit-label
+    plugin: text
+    label: 'Nom de la langue'
+    body: '<p>Le nom de la langue est utilisé à travers le site pour tous les utilisateurs et est écrite en anglais. Les noms des langues prédéfinies peuvent être traduites en utilisant le module Interface Translation et les noms des langues prédéfinies et des langues personnalisées peuvent être traduits en utilisant le module Configuration Translation.</p>'
+    weight: 3
+    attributes:
+      data-id: edit-label
+  language-edit-direction:
+    id: language-edit-direction
+    plugin: text
+    label: 'Sens de l''écriture'
+    body: '<p>Choisir si la langue se lit "de gauche à droite" ou "de droite à gauche".</p><p>Notez que tous les thèmes ne supportent pas la mise en page "de droite à gauche" alors testez votre thème si vous utilisez "de droite à gauche".</p>'
+    weight: 4
+    attributes:
+      data-id: edit-direction--wrapper--description
+  language-edit-continue:
+    id: language-edit-continue
+    plugin: text
+    label: 'Continuant sur'
+    body: '<p>Maintenant que vous avez une vue d''ensemble de la fonctionnalité "Modifier une langue", vous pouvez continuer par : <ul><li>Modifier une langue</li><li><a href="[site:url]admin/config/regional/language">Afficher les langues configurées</a></li></ul></p>'
+    weight: 5

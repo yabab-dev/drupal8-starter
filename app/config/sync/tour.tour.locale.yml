@@ -1,0 +1,75 @@
+uuid: f720f84c-3459-4b9c-b60a-0601db5b9519
+langcode: fr
+status: true
+dependencies:
+  module:
+    - locale
+_core:
+  default_config_hash: IGyq02Zgyl_6WJczNqeYnXXQR_B_iM-yyOFXOUmVpLk
+id: locale
+label: Traduction
+module: locale
+routes:
+  -
+    route_name: locale.translate_page
+tips:
+  locale-overview:
+    id: locale-overview
+    plugin: text
+    label: 'Traduction de l''interface utilisateur'
+    body: 'Cette page vous permet de traduire l''interface utilisateur ou de modifier des traductions existantes. Si vous avez installé votre site initialement en anglais, vous devez d''abord ajouter une autre langue dans la <a href="[site:url]admin/config/regional/language"> page des Langues </a>, afin d''utiliser cette page.'
+    weight: 1
+  locale-language:
+    id: locale-language
+    plugin: text
+    label: 'Langue de traduction'
+    body: 'Choisir la langue que vous souhaitez traduire.'
+    weight: 2
+    attributes:
+      data-id: edit-langcode
+  locale-search:
+    id: locale-search
+    plugin: text
+    label: Search
+    body: 'Saisir le mot ou la phrase précise que vous souhaitez traduire, vous pouvez aussi écrire seulement une partie d''un mot.'
+    weight: 3
+    attributes:
+      data-id: edit-string
+  locale-filter:
+    id: locale-filter
+    plugin: text
+    label: 'Filtrer la recherche'
+    body: 'Vous pouvez chercher les chaînes non traduites si vous voulez traduire quelque chose qui n''a pas encore été traduit. Si vous voulez modifier une traduction existante, vous pouvez ne rechercher que les chaînes traduites.'
+    weight: 4
+    attributes:
+      data-id: edit-translation
+  locale-submit:
+    id: locale-submit
+    plugin: text
+    label: 'Appliquer vos critères de recherche'
+    body: 'Pour appliquer vos critères de recherche, cliquer sur le bouton <em>Filtrer</em>.'
+    weight: 5
+    attributes:
+      data-id: edit-submit
+  locale-translate:
+    id: locale-translate
+    plugin: text
+    label: Traduire
+    body: 'Vous pouvez écrire votre propre traduction dans les champs texte de la colonne de droite. Essayez de savoir dans quel contexte le texte sera utilisé pour le traduire de façon appropriée.'
+    weight: 6
+    attributes:
+      data-class: js-form-type-textarea
+  locale-validate:
+    id: locale-validate
+    plugin: text
+    label: 'Valider la traduction'
+    body: 'Lorsque vous avez terminé vos traductions, cliquer sur le bouton <em>Enregistrer vos traductions</em>. Vous devez enregistrer vos traductions à chaque fois que vous souhaitez changer de page ou faire une nouvelle recherche.'
+    weight: 7
+    attributes:
+      data-id: edit-submit--2
+  locale-continue:
+    id: locale-continue
+    plugin: text
+    label: 'Continuant sur'
+    body: 'Les traductions que vous avez faites ici seront utilisées sur l''interface utilisateur de votre site. Si vous souhaitez les utiliser sur un autre site ou les modifier sur un éditeur de traduction externe, vous pouvez les <a href="[site:url]admin/config/regional/translate/export"> exporter </a> vers un fichier .po et les <a href="[site:url]admin/config/regional/translate/import"> importer </a> plus tard.'
+    weight: 8

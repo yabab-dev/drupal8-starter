@@ -1,0 +1,35 @@
+uuid: e179e5dc-a192-46f8-b731-231f4d5299f1
+langcode: fr
+status: true
+dependencies:
+  module:
+    - language
+_core:
+  default_config_hash: PM2qJqRak_LRDoD905MdombBZUvJvM4ID29VbjtYcZA
+id: language-add
+label: 'Ajout de langues'
+module: language
+routes:
+  -
+    route_name: language.add
+tips:
+  language-add-overview:
+    id: language-add-overview
+    plugin: text
+    label: 'Ajout de langues'
+    body: '<p>Cette page donne la possibilité d''ajouter des langues communes sur votre site.</p><p>Si la langue souhaitée n''est pas disponible, vous pouvez ajouter une langue personnalisée.</p>'
+    weight: 1
+  language-add-choose:
+    id: language-add-choose
+    plugin: text
+    label: 'Choisissez une langue'
+    body: '<p>Choisir une langue dans la liste ou choisir "Langue personnalisée..." à la fin de la liste.</p><p>Cliquer sur le bouton "Ajouter une langue" lorsque votre langue est choisie.</p><p>Lors de l''ajout d''une langue personnalisée, un formulaire supplémentaire vous demandera d''indiquer le nom, le code et le sens de lecture de la langue.</p>'
+    weight: 2
+    attributes:
+      data-id: edit-predefined-langcode
+  language-add-continue:
+    id: language-add-continue
+    plugin: text
+    label: 'Continuant sur'
+    body: "<p>Maintenant que vous avez une vue d'ensemble de la fonctionnalité \"Ajouter des langues\", vous pouvez continuer par :\r\n <ul><li>Ajouter une langue</li><li>Ajouter une langue personnalisée</li><li><a href=\"[site:url]admin/config/regional/language\">Afficher les langues configurées</a></li></ul></p>"
+    weight: 3

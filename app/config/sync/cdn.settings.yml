@@ -1,0 +1,14 @@
+langcode: fr
+status: false
+mapping:
+  type: simple
+  domain: null
+  conditions:
+    not:
+      extensions:
+        - css
+        - js
+farfuture:
+  status: true
+_core:
+  default_config_hash: BgB9K3XGWXgfmhmI8i4iizu5x86GnwpXDr9MIJ-6XuQ

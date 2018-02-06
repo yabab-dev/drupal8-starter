@@ -1,0 +1,46 @@
+uuid: 37b6cd4b-cf64-4178-bb17-eb451059cba1
+langcode: und
+status: true
+dependencies:
+  config:
+    - views.view.files_entity_browser
+  enforced:
+    module:
+      - entity_browser_example
+  module:
+    - views
+_core:
+  default_config_hash: Iw4_u1kyTetdrrQDNv51bmwsnDaH4bMceVY-ppOBROM
+name: test_files
+label: 'Test entity browser for files'
+display: iframe
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  a4ad947c-9669-497c-9988-24351955a02f:
+    settings:
+      view: files_entity_browser
+      view_display: entity_browser_1
+      submit_text: 'Select entities'
+      auto_select: false
+    uuid: a4ad947c-9669-497c-9988-24351955a02f
+    weight: 1
+    label: 'Files listing'
+    id: view
+  735d146c-a4b2-4327-a057-d109e0905e05:
+    settings:
+      upload_location: 'public://'
+      multiple: true
+      submit_text: 'Select files'
+      extensions: 'jpg jpeg gif png txt doc xls pdf ppt pps odt ods odp'
+    uuid: 735d146c-a4b2-4327-a057-d109e0905e05
+    weight: 0
+    label: 'Upload files'
+    id: upload
