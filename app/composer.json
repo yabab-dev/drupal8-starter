@@ -19,7 +19,8 @@
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.2",
-        "drupal/admin_toolbar": "^1.22",
+        "drupal/admin_toolbar": "1.23",
+        "drupal/backup_migrate": "^4.0@beta",
         "drupal/better_formats": "1.x-dev",
         "drupal/cdn": "^3.2",
         "drupal/ckeditor_media_embed": "^1.1",
@@ -62,6 +63,7 @@
         "drupal/simple_sitemap": "^2.11",
         "drupal/token": "^1.1",
         "drupal/video_embed_field": "^1.5",
+        "drupal/webform": "^5.0@RC",
         "drush/drush": "^9.0.0",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"

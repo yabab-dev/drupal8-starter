@@ -41,6 +41,12 @@ drupal config:import --directory "../config/sync" --skip-uuid
 drupal cache:rebuild
 ```
 
+## Aditionnal features to install
+
+```sh
+drupal ckeditor_media_embed:install
+```
+
 ## Visit your site
 
 [http://localhost:8000](http://localhost:8000)
