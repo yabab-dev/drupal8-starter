@@ -23,7 +23,7 @@ services:
     ports:
       - 8000:80
     volumes:
-      - ./drupal:/drupal
+      - ./app:/app
     environment:
       PHP_MEMORY_LIMIT: 256M
 
