@@ -3,7 +3,7 @@ FROM webdevops/php-apache-dev
 EXPOSE 80
 ENV WEB_DOCUMENT_ROOT /app/web
 
-# Required for drush install
+# Required for drush
 RUN apt-install mysql-client
 
 # Copy drupal files
