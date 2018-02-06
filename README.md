@@ -1,5 +1,12 @@
 # Drupal 8 & Docker starter
 
+## User specific configurations
+
+```sh
+cp docker-compose.override.yml.default docker-compose.override.yml
+# And change variables if needed ;)
+```
+
 ## Install drupal on your host
 
 ```sh
