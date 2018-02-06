@@ -41,3 +41,7 @@ drupal si standard -y \
 ## Visit your site
 
 [http://localhost:8000](http://localhost:8000)
+
+## Image docs
+
+https://dockerfile.readthedocs.io/en/latest/content/DockerImages/dockerfiles/php-apache-dev.html
