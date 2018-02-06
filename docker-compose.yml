@@ -32,4 +32,6 @@ services:
 
   maildev:
     image: djfarrelly/maildev
+    ports:
+      - 8025:80
 
