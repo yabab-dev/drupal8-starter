@@ -1,0 +1,8 @@
+uuid: aa0d8ce4-c940-4af0-871e-1c3dfdecaaf6
+langcode: fr
+status: true
+dependencies: {  }
+id: simple
+label: Simple
+locked: false
+pattern: 'd/m/Y - H:i'
