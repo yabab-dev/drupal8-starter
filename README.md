@@ -33,7 +33,7 @@ drupal si --no-interaction standard \
 --account-mail="example@domain.com"  \
 --account-pass="admin"
 
-# Set uuid: null to your default language file 'language.entity.<langcode>'
+# /!\ Set uuid: null to your default language file 'language.entity.<langcode>'
 
 drupal entity:delete shortcut_set default
 drupal config:import --directory "../config/sync" --skip-uuid
