@@ -14,6 +14,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: root
     volumes:
+      - ./etc/mysql.cnf:/etc/mysql/my.cnf
       - mysql-data:/var/lib/data
 
   app:
@@ -24,6 +25,8 @@ services:
       - 8000:80
     volumes:
       - ./app:/app
+      - ./etc/apache.conf:/opt/docker/etc/httpd/conf.d/custom.conf
+      - ./etc/php.ini:/opt/docker/etc/php/php.ini
     environment:
       PHP_MEMORY_LIMIT: 256M
 

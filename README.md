@@ -16,9 +16,7 @@ docker-compose exec -u application app bash
 
 ```sh
 # On container
-composer install -o
-
-drupal si standard \
+drupal si standard -y \
 --langcode="fr"  \
 --db-type="mysql"  \
 --db-host="mysql"  \

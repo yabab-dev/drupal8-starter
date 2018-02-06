@@ -1,4 +1,4 @@
-FROM webdevops/php-apache:7.1
+FROM webdevops/php-apache-dev:7.2
 
 EXPOSE 80
 ENV WEB_DOCUMENT_ROOT /app/web
