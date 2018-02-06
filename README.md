@@ -16,15 +16,11 @@ docker-compose exec -u application app bash
 
 ```sh
 # On container
-drupal si standard -y \
---langcode="fr"  \
---db-type="mysql"  \
---db-host="mysql"  \
---db-name="drupal"  \
---db-user="root"  \
---db-pass="root"  \
---db-port="3306"  \
+composer install -o
+
+drush si -y --config-dir="../config/sync" \
 --db-prefix="" \
+--db-url="mysql://root:root@mysql:3306/drupal" \
 --site-name="Drupal 8"  \
 --site-mail="example@domain.com"  \
 --account-name="admin"  \
