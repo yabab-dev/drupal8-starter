@@ -7,12 +7,6 @@ cp docker-compose.override.yml.default docker-compose.override.yml
 # And change variables if needed ;)
 ```
 
-## Install drupal on your host
-
-```sh
-composer create-project drupal-composer/drupal-project:8.x-dev app --stability dev --no-interaction
-```
-
 ## Start docker containers
 
 ```sh
@@ -25,10 +19,14 @@ docker-compose up -d
 docker-compose exec -u application app bash
 ```
 
-## Install Drupal database
+## Install Drupal & database
 
 ```sh
 # On container
+/create.sh
+
+composer create-project drupal-composer/drupal-project:8.x-dev app --stability dev --no-interaction
+
 drupal si standard -y \
 --langcode="fr"  \
 --db-type="mysql"  \

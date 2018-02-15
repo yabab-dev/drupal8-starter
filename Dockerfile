@@ -8,6 +8,8 @@ RUN apt-install mysql-client
 
 # Copy drupal files
 COPY app /app
+COPY create.sh /create.sh
+
 WORKDIR /app
 
 # Composer vendor added to PATH
