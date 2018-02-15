@@ -3,6 +3,10 @@ FROM webdevops/php-apache-dev
 EXPOSE 80
 ENV WEB_DOCUMENT_ROOT /app/web
 
+# NodeJS
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - \
+  && apt-get install -y nodejs
+
 # Required for drush
 RUN apt-get install -y mysql-client
 
