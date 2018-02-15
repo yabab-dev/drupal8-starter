@@ -4,7 +4,7 @@ EXPOSE 80
 ENV WEB_DOCUMENT_ROOT /app/web
 
 # Required for drush
-RUN apt-install mysql-client
+RUN apt-get install -y mysql-client
 
 # Copy drupal files
 COPY app /app
