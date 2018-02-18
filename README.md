@@ -27,7 +27,7 @@ docker-compose exec -u application app bash
 
 composer create-project drupal-composer/drupal-project:8.x-dev app --stability dev --no-interaction
 
-drupal si standard -y \
+drupal si standard --no-interaction \
 --langcode="fr"  \
 --db-type="mysql"  \
 --db-host="mysql"  \
